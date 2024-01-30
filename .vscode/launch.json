@@ -2,12 +2,66 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Run Console",
+            "name": "Embed Demo Text",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build-console",
             "program": "${workspaceFolder}/MiddleSchool.ConsoleApp/bin/Debug/net8.0/MiddleSchool.ConsoleApp.dll",
-            "args": [],
+            "args": [
+                "embed",
+                "Text\\Demo.txt"
+            ],
+            "cwd": "${workspaceFolder}/MiddleSchool.ConsoleApp/bin/Debug/net8.0",
+            "console": "internalConsole",
+            "env": {
+                "DOTNET_ENVIRONMENT": "Development"
+            },
+            "stopAtEntry": false
+        },
+        {
+            "name": "Embed Large Text",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-console",
+            "program": "${workspaceFolder}/MiddleSchool.ConsoleApp/bin/Debug/net8.0/MiddleSchool.ConsoleApp.dll",
+            "args": [
+                "embed",
+                "Text\\Large.txt"
+            ],
+            "cwd": "${workspaceFolder}/MiddleSchool.ConsoleApp/bin/Debug/net8.0",
+            "console": "internalConsole",
+            "env": {
+                "DOTNET_ENVIRONMENT": "Development"
+            },
+            "stopAtEntry": false
+        },
+        {
+            "name": "Extract Demo Text",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-console",
+            "program": "${workspaceFolder}/MiddleSchool.ConsoleApp/bin/Debug/net8.0/MiddleSchool.ConsoleApp.dll",
+            "args": [
+                "extract",
+                "Demo.png"
+            ],
+            "cwd": "${workspaceFolder}/MiddleSchool.ConsoleApp/bin/Debug/net8.0",
+            "console": "internalConsole",
+            "env": {
+                "DOTNET_ENVIRONMENT": "Development"
+            },
+            "stopAtEntry": false
+        },
+        {
+            "name": "Extract Large Text",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-console",
+            "program": "${workspaceFolder}/MiddleSchool.ConsoleApp/bin/Debug/net8.0/MiddleSchool.ConsoleApp.dll",
+            "args": [
+                "extract",
+                "Large.png"
+            ],
             "cwd": "${workspaceFolder}/MiddleSchool.ConsoleApp/bin/Debug/net8.0",
             "console": "internalConsole",
             "env": {
