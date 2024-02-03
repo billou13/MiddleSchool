@@ -2,13 +2,19 @@
 
 Ce projet permet de présenter un code fonctionnel en seulement quelques lignes de code.
 
-## Images
+1. [L'énigme](.doc/01-enigma.md)
+2. [Installation](.doc/02-setup.md)
+3. [Exécution du code](.doc/03-debug.md)
 
-### Première image
-![Bordeaux](MiddleSchool.ConsoleApp/Images/Bordeaux.png)
+## Les lignes de commande
 
-### Seconde image
-![Bordeaux](MiddleSchool.ConsoleApp/Images/Bordeaux-Large.png)
+```
+MiddleSchool.ConsoleApp.exe embed "Text\Demo.txt"
+MiddleSchool.ConsoleApp.exe extract "Demo.png"
+
+MiddleSchool.ConsoleApp.exe embed "Text\Large.txt"
+MiddleSchool.ConsoleApp.exe extract "Large.png"
+```
 
 ## Remerciements
 Merci à:
